@@ -35,6 +35,7 @@
                                         <rect key="frame" x="0.0" y="150" width="224" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="SA5-m2-WgH"/>
+                                            <constraint firstAttribute="width" secondItem="Fg9-xh-Yrv" secondAttribute="height" multiplier="56:25" id="sbL-gr-iyG"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="vCz-WK-xaz"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
@@ -48,6 +49,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Wme-P9-dhp"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Wtx-Ew-P4H"/>
+                                            <constraint firstAttribute="width" secondItem="2HI-jC-N3H" secondAttribute="height" multiplier="56:25" id="bZK-ee-PA8"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="France" title=""/>
@@ -56,12 +58,17 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="2HI-jC-N3H" firstAttribute="height" secondItem="Fg9-xh-Yrv" secondAttribute="height" id="EQY-9Y-H28"/>
+                                    <constraint firstItem="Fg9-xh-Yrv" firstAttribute="height" secondItem="Yr3-Ym-Tku" secondAttribute="height" id="Gvy-Zm-nwO"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <constraints>
                             <constraint firstItem="BBJ-LB-jdW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ITq-y2-mqQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2HI-jC-N3H" secondAttribute="bottom" constant="20" id="JVF-EH-RR9"/>
                             <constraint firstItem="BBJ-LB-jdW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iIL-fJ-QMo"/>
                         </constraints>
                     </view>
